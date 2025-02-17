@@ -1,0 +1,28 @@
+# Python Bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual Environments
+venv/
+.env/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.iml
+
+# Logs and Debug Files
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Environment Variables
+.env
+
+# Compiled Files
+*.pyo
+*.pyd
+*.pyc
+
