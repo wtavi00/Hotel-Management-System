@@ -32,3 +32,11 @@ class Customer:
     
     def get_no_of_days(self):
         return self.no_of_days
+class Room(ABC):
+    counter=100
+    def __init__(self,price):
+        Room.counter+=1
+        self.room_id=None
+        self.price=price
+        self.customer=None
+        
