@@ -13,3 +13,9 @@ Fortune Hotel wants to automate their daily activities such as check-in and chec
   - Luxury Room IDs are prefixed with `L` (e.g., `L101`).
   - Standard Room IDs are prefixed with `S` (e.g., `S102`).
 - Discounts apply for stays longer than 5 days in a luxury room.
+
+## Class Structure
+
+### `Customer` Class
+- Stores customer details such as name, address, and stay duration.
+- Each customer is assigned a unique ID starting from 1001.
