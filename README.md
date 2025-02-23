@@ -19,3 +19,7 @@ Fortune Hotel wants to automate their daily activities such as check-in and chec
 ### `Customer` Class
 - Stores customer details such as name, address, and stay duration.
 - Each customer is assigned a unique ID starting from 1001.
+
+### `Room` (Abstract Class)
+- Stores details about rooms, including price and assigned customer.
+- Implements `calculate_room_rent(no_of_days)` as an abstract method.
