@@ -42,3 +42,6 @@ class Room(ABC):
         
     def get_room_id(self):
         return self.room_id
+        
+    def get_price(self):
+        return self.price
