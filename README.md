@@ -23,3 +23,7 @@ Fortune Hotel wants to automate their daily activities such as check-in and chec
 ### `Room` (Abstract Class)
 - Stores details about rooms, including price and assigned customer.
 - Implements `calculate_room_rent(no_of_days)` as an abstract method.
+
+### `LuxuryRoom` Class (Inherits from `Room`)
+- Has an additional attribute: `free_wifi`.
+- Applies a 5% discount for stays longer than 5 days.
