@@ -40,3 +40,5 @@ class Room(ABC):
         self.price=price
         self.customer=None
         
+    def get_room_id(self):
+        return self.room_id
