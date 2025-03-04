@@ -45,3 +45,9 @@ class Room(ABC):
         
     def get_price(self):
         return self.price
+
+class LuxuryRoom(Room):
+    def __init__(self, price):
+        super().__init__(price)
+        self.room_id = f"L{Room.counter}"
+        self.free_wifi = True
