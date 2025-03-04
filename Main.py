@@ -51,3 +51,6 @@ class LuxuryRoom(Room):
         super().__init__(price)
         self.room_id = f"L{Room.counter}"
         self.free_wifi = True
+    def get_free_wifi(self):
+        return self.free_wifi
+        
