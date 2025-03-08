@@ -34,6 +34,7 @@ class Customer:
         return self.no_of_days
 class Room(ABC):
     counter=100
+    
     def __init__(self,price):
         Room.counter+=1
         self.room_id=None
@@ -47,10 +48,15 @@ class Room(ABC):
         return self.price
 
 class LuxuryRoom(Room):
+    
     def __init__(self, price):
         super().__init__(price)
         self.room_id = f"L{Room.counter}"
         self.free_wifi = True
+        
     def get_free_wifi(self):
         return self.free_wifi
         
+    def set_free_wifi(self, free_wifi):
+        self.free_wifi = free_wifi
+
