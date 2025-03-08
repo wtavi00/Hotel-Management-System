@@ -27,3 +27,6 @@ Fortune Hotel wants to automate their daily activities such as check-in and chec
 ### `LuxuryRoom` Class (Inherits from `Room`)
 - Has an additional attribute: `free_wifi`.
 - Applies a 5% discount for stays longer than 5 days.
+
+### `StandardRoom` Class (Inherits from `Room`)
+- Has an additional attribute: `comfortable_desk`.
