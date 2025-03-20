@@ -60,3 +60,8 @@ class LuxuryRoom(Room):
     def set_free_wifi(self, free_wifi):
         self.free_wifi = free_wifi
 
+    def calculate_room_rent(self, no_of_days):
+        total_rent = self.price * no_of_days
+        if no_of_days > 5:
+            total_rent *= 0.95
+        return total_rent
