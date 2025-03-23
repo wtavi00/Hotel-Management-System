@@ -65,3 +65,10 @@ class LuxuryRoom(Room):
         if no_of_days > 5:
             total_rent *= 0.95
         return total_rent
+
+class StandardRoom(Room):
+    def __init__(self, price):
+        super().__init__(price)
+        self.room_id = f"S{Room.counter}"
+        self.comfortable_desk = True
+        
