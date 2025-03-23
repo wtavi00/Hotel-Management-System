@@ -72,3 +72,6 @@ class StandardRoom(Room):
         self.room_id = f"S{Room.counter}"
         self.comfortable_desk = True
         
+    def get_comfortable_desk(self):
+        return self.comfortable_desk
+
