@@ -75,3 +75,5 @@ class StandardRoom(Room):
     def get_comfortable_desk(self):
         return self.comfortable_desk
 
+    def set_comfortable_desk(self, comfortable_desk):
+        self.comfortable_desk = comfortable_desk
