@@ -30,3 +30,8 @@ Fortune Hotel wants to automate their daily activities such as check-in and chec
 
 ### `StandardRoom` Class (Inherits from `Room`)
 - Has an additional attribute: `comfortable_desk`.
+
+### `Hotel` Class
+- Manages a list of available rooms.
+- Handles **check-in** and **check-out**.
+- Automatically assigns rooms to customers.
