@@ -77,3 +77,6 @@ class StandardRoom(Room):
 
     def set_comfortable_desk(self, comfortable_desk):
         self.comfortable_desk = comfortable_desk
+
+    def calculate_room_rent(self, no_of_days):
+        return self.price * no_of_days
