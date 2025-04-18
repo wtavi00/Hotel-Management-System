@@ -35,3 +35,5 @@ Fortune Hotel wants to automate their daily activities such as check-in and chec
 - Manages a list of available rooms.
 - Handles **check-in** and **check-out**.
 - Automatically assigns rooms to customers.
+
+## Installation and Usage
