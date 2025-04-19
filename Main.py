@@ -80,3 +80,9 @@ class StandardRoom(Room):
 
     def calculate_room_rent(self, no_of_days):
         return self.price * no_of_days
+
+
+class Hotel:
+    def __init__(self, room_list, location):
+        self.room_list = room_list
+        self.location = location
