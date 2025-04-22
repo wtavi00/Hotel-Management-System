@@ -86,3 +86,6 @@ class Hotel:
     def __init__(self, room_list, location):
         self.room_list = room_list
         self.location = location
+
+    def get_room_list(self):
+        return self.room_list
