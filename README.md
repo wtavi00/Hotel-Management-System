@@ -40,3 +40,6 @@ Fortune Hotel wants to automate their daily activities such as check-in and chec
 
 ### Prerequisites
 Ensure you have Python 3 installed.
+
+
+### Steps to Run the Program
