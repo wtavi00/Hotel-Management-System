@@ -93,3 +93,6 @@ class Hotel:
     def set_room_list(self, room_list):
         self.room_list = room_list
 
+    def get_location(self):
+        return self.location
+
