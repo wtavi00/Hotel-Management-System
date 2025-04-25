@@ -43,3 +43,4 @@ Ensure you have Python 3 installed.
 
 
 ### Steps to Run the Program
+1. Clone the repository:
