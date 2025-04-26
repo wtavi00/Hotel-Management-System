@@ -44,3 +44,7 @@ Ensure you have Python 3 installed.
 
 ### Steps to Run the Program
 1. Clone the repository:
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/Hotel_Management_System.git
+   cd Hotel_Management_System
+   ```
