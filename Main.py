@@ -96,3 +96,6 @@ class Hotel:
     def get_location(self):
         return self.location
 
+    def set_location(self, location):
+        self.location = location
+        
