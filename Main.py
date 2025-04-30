@@ -98,4 +98,5 @@ class Hotel:
 
     def set_location(self, location):
         self.location = location
-        
+
+    def check_in(self, customer, room_type):
