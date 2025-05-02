@@ -51,3 +51,5 @@ Ensure you have Python 3 installed.
    ```bash
    python hotel_management.py
    ```
+
+## Example Execution
