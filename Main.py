@@ -100,3 +100,5 @@ class Hotel:
         self.location = location
 
     def check_in(self, customer, room_type):
+        for room in self.room_list:
+            if isinstance(room, room_type) and room.get_customer() is None:
