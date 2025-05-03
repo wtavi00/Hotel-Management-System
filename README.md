@@ -53,3 +53,4 @@ Ensure you have Python 3 installed.
    ```
 
 ## Example Execution
+```bash
