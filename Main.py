@@ -102,3 +102,6 @@ class Hotel:
     def check_in(self, customer, room_type):
         for room in self.room_list:
             if isinstance(room, room_type) and room.get_customer() is None:
+                Customer.counter += 1
+                customer.set_customer_id(Customer.counter)
+                
