@@ -54,3 +54,4 @@ Ensure you have Python 3 installed.
 
 ## Example Execution
 ```bash
+Alice checked into a Luxury Room.
