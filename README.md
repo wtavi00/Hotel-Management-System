@@ -56,3 +56,4 @@ Ensure you have Python 3 installed.
 ```bash
 Alice checked into a Luxury Room.
 Bob checked into a Standard Room.
+Alice checked out. Total Rent: $28500.0
