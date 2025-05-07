@@ -104,4 +104,4 @@ class Hotel:
             if isinstance(room, room_type) and room.get_customer() is None:
                 Customer.counter += 1
                 customer.set_customer_id(Customer.counter)
-                
+                room.set_customer(customer)
