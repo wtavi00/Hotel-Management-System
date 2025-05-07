@@ -57,3 +57,5 @@ Ensure you have Python 3 installed.
 Alice checked into a Luxury Room.
 Bob checked into a Standard Room.
 Alice checked out. Total Rent: $28500.0
+Bob checked out. Total Rent: $9600
+```
