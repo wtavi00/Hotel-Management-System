@@ -105,3 +105,8 @@ class Hotel:
                 Customer.counter += 1
                 customer.set_customer_id(Customer.counter)
                 room.set_customer(customer)
+                return True
+            return False
+    def check_out(self,Customer):
+        for room in self.room_list:
+            
