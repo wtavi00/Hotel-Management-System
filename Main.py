@@ -109,4 +109,9 @@ class Hotel:
             return False
     def check_out(self,Customer):
         for room in self.room_list:
-            
+            if room.get_customer() and room.get_customer().get_customer_id() == customer.get_customer_id():
+                total_rent = room.calculate_room_rent(customer.get_no_of_days())
+                room.set_customer(None)
+                return total_rent
+        return False
+        
