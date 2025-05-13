@@ -1,0 +1,4 @@
+luxury_room1 = LuxuryRoom(5000)
+luxury_room2 = LuxuryRoom(5500)
+standard_room1 = StandardRoom(3000)
+standard_room2 = StandardRoom(3200)
