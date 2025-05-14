@@ -54,8 +54,13 @@ Ensure you have Python 3 installed.
 
 ## Example Execution
 ```bash
-Alice checked into a Luxury Room.
-Bob checked into a Standard Room.
-Alice checked out. Total Rent: $28500.0
-Bob checked out. Total Rent: $9600
+hotel_management/
+│
+├── main.py                # Entry point of the application
+├── models/
+│   ├── __init__.py
+│   ├── customer.py        # Customer class
+│   ├── room.py            # Abstract Room + subclasses
+│   └── hotel.py           # Hotel class
+
 ```
