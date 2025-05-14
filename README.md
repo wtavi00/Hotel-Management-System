@@ -52,7 +52,7 @@ Ensure you have Python 3 installed.
    python hotel_management.py
    ```
 
-## Example Execution
+## Code Structure
 ```bash
 hotel_management/
 │
