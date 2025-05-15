@@ -1,117 +1,37 @@
-from abc import ABC, abstractmethod
+from models.customer import Customer
+from models.room import LuxuryRoom, StandardRoom
+from models.hotel import Hotel
 
-class Customer:
-    counter = 1000
-    
-    def __init__(self, customer_name, address, no_of_days):
-        self.customer_name = customer_name
-        self.address = address
-        self.no_of_days = no_of_days
-        self.customer_id = None
-    
-    def set_customer_name(self, customer_name):
-        self.customer_name = customer_name
-    
-    def set_address(self, address):
-        self.address = address
-    
-    def set_no_of_days(self, no_of_days):
-        self.no_of_days = no_of_days
-    
-    def set_customer_id(self, customer_id):
-        self.customer_id = customer_id
-    
-    def get_customer_id(self):
-        return self.customer_id
-    
-    def get_customer_name(self):
-        return self.customer_name
-    
-    def get_address(self):
-        return self.address
-    
-    def get_no_of_days(self):
-        return self.no_of_days
-class Room(ABC):
-    counter=100
-    
-    def __init__(self,price):
-        Room.counter+=1
-        self.room_id=None
-        self.price=price
-        self.customer=None
-        
-    def get_room_id(self):
-        return self.room_id
-        
-    def get_price(self):
-        return self.price
+def main():
+    luxury_rooms = [LuxuryRoom(5000), LuxuryRoom(5500)]
+    standard_rooms = [StandardRoom(3000), StandardRoom(3200)]
 
-class LuxuryRoom(Room):
-    
-    def __init__(self, price):
-        super().__init__(price)
-        self.room_id = f"L{Room.counter}"
-        self.free_wifi = True
-        
-    def get_free_wifi(self):
-        return self.free_wifi
-        
-    def set_free_wifi(self, free_wifi):
-        self.free_wifi = free_wifi
+    hotel = Hotel(luxury_rooms + standard_rooms, "Downtown")
 
-    def calculate_room_rent(self, no_of_days):
-        total_rent = self.price * no_of_days
-        if no_of_days > 5:
-            total_rent *= 0.95
-        return total_rent
+    customer1 = Customer("Alice", "123 Street, NY", 6)
+    customer2 = Customer("Bob", "456 Avenue, LA", 3)
 
-class StandardRoom(Room):
-    def __init__(self, price):
-        super().__init__(price)
-        self.room_id = f"S{Room.counter}"
-        self.comfortable_desk = True
-        
-    def get_comfortable_desk(self):
-        return self.comfortable_desk
+    if hotel.check_in(customer1, LuxuryRoom):
+        print(f"{customer1} checked into a Luxury Room.")
+    else:
+        print("No available Luxury Rooms.")
 
-    def set_comfortable_desk(self, comfortable_desk):
-        self.comfortable_desk = comfortable_desk
+    if hotel.check_in(customer2, StandardRoom):
+        print(f"{customer2} checked into a Standard Room.")
+    else:
+        print("No available Standard Rooms.")
 
-    def calculate_room_rent(self, no_of_days):
-        return self.price * no_of_days
+    rent1 = hotel.check_out(customer1)
+    if rent1:
+        print(f"{customer1} checked out. Total Rent: ${rent1:.2f}")
+    else:
+        print("Customer not found.")
 
+    rent2 = hotel.check_out(customer2)
+    if rent2:
+        print(f"{customer2} checked out. Total Rent: ${rent2:.2f}")
+    else:
+        print("Customer not found.")
 
-class Hotel:
-    def __init__(self, room_list, location):
-        self.room_list = room_list
-        self.location = location
-
-    def get_room_list(self):
-        return self.room_list
-
-    def set_room_list(self, room_list):
-        self.room_list = room_list
-
-    def get_location(self):
-        return self.location
-
-    def set_location(self, location):
-        self.location = location
-
-    def check_in(self, customer, room_type):
-        for room in self.room_list:
-            if isinstance(room, room_type) and room.get_customer() is None:
-                Customer.counter += 1
-                customer.set_customer_id(Customer.counter)
-                room.set_customer(customer)
-                return True
-            return False
-    def check_out(self,Customer):
-        for room in self.room_list:
-            if room.get_customer() and room.get_customer().get_customer_id() == customer.get_customer_id():
-                total_rent = room.calculate_room_rent(customer.get_no_of_days())
-                room.set_customer(None)
-                return total_rent
-        return False
-        
+if __name__ == "__main__":
+    main()
