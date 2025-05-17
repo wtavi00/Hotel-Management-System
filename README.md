@@ -49,7 +49,7 @@ Ensure you have Python 3 installed.
    ```
 2. Run the Python script:
    ```bash
-   python hotel_management.py
+   python main.py
    ```
 
 ## Code Structure
