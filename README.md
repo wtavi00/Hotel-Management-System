@@ -64,3 +64,8 @@ hotel_management/
 │   └── hotel.py           # Hotel class
 
 ```
+
+### License
+```bash
+https://github.com/wtavi00/Hotel-Management-System/blob/main/LICENSE
+```
