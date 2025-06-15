@@ -65,7 +65,8 @@ hotel_management/
 
 ```
 
+### Auther
+[Avijit Tarafder](https://github.com/wtavi00)
+
 ### License
-```bash
-https://github.com/wtavi00/Hotel-Management-System/blob/main/LICENSE
-```
+[MIT License](https://github.com/wtavi00/Hotel-Management-System/blob/main/LICENSE)
