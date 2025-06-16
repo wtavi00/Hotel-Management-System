@@ -65,7 +65,7 @@ hotel_management/
 
 ```
 
-### Auther
+### Authier
 [Avijit Tarafder](https://github.com/wtavi00)
 
 ### License
