@@ -39,7 +39,7 @@ Fortune Hotel wants to automate their daily activities such as check-in and chec
 ## Installation and Usage
 
 ### Prerequisites
-Ensure you have Python 3 installed.
+Python 3 installed.
 
 ### Steps to Run the Program
 1. Clone the repository:
